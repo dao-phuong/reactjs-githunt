@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FontAwesome from 'font-awesome';
+import 'font-awesome/css/font-awesome.css';
 import './Repo.css';
 
 class Repo extends Component {

@@ -1,3 +1,36 @@
 .repo {
-    
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    background: #fff;
+    color: #555;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.repo__title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.repo__title > a {
+    color: #555;
+    text-decoration: none;
+}
+
+.repo__body {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.repo__footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+}
+
+.repo__footer > span {
+    margin-right: 10px;
 }

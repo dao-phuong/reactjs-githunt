@@ -3,11 +3,10 @@ import 'font-awesome/css/font-awesome.css';
 import './Repo.css';
 
 class Repo extends Component {
-
     render() {
         return (
             <section className="repo">
-                <h2 className="repo__title">{this.props.title}</h2>
+                <h2 className="repo__title"><a href={this.props.url}>{this.props.title}</a></h2>
                 <p className="repo__body">{this.props.body}</p>
                 <div className="repo__footer">
                     <span><i className="fa fa-code-fork"></i> {this.props.fork_num}</span>

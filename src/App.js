@@ -7,7 +7,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listRepo: []
+      listRepo: [],
+      listLanguage: []
     };
   }
 
@@ -17,6 +18,30 @@ class App extends Component {
         <header>        
           <h1>Githunt</h1>
           <p>Hunting the best Github repositories</p>
+          <div className="pos-right">
+            <select>
+              <option>Year</option>
+              <option>Month</option>
+              <option>Week</option>
+            </select>
+            <select size="">
+              <option>All language</option>
+              <option>ABAP</option>
+              <option>Action Script</option>
+              <option>Ada</option>
+              <option>AGS Scriptt</option>
+              <option>Alloy</option>
+              <option>AMPL</option>
+              <option>ANTLR</option>
+              <option>ApacheConf</option>
+              <option>API Blueprint</option>
+              <option>AppleScript</option>
+              <option>Java</option>
+              <option>JavaScript</option>
+              <option>Swift</option>
+              <option>Kotlin</option>
+            </select>
+          </div>
         </header>
         <ListRepo time="A year ago - Jun 8, 2017 – Jun 7, 2018" />
       </div>

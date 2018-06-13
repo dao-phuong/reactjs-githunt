@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Repo from './Repo';
+import axios from 'axios';
+
 
 class App extends Component {
   constructor(props) {
@@ -71,6 +73,17 @@ class ListRepo extends Component {
         </ul>
       </section>
     );
+  }
+}
+
+var apiCall = {
+  init: function () {
+
+  },
+  authenticate: function () {
+    axios.post('https://github.com/login/oauth/access_token', {
+      
+    });
   }
 }
 

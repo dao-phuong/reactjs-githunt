@@ -12,6 +12,8 @@ class App extends Component {
       listRepo: [],
       listLanguage: []
     };
+
+    apiCall.getListRepo();
   }
 
   render() {
@@ -80,9 +82,10 @@ var apiCall = {
   init: function () {
 
   },
-  authenticate: function () {
-    axios.post('https://github.com/login/oauth/access_token', {
-      
+  getListRepo: function () {
+    axios.get('https://api.github.com/repositories')
+    .then((response) => {
+      console.log(response);
     });
   }
 }
